@@ -8,6 +8,7 @@
 
 #import <DTFoundation/DTWeakSupport.h>
 
+#if FALSE
 @class DTWebVideoView;
 @class DTTextAttachment;
 
@@ -50,3 +51,4 @@
 @property (nonatomic, strong) DTTextAttachment *attachment;
 
 @end
+#endif

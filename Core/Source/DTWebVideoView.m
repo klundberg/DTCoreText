@@ -7,7 +7,7 @@
 //
 
 #import "DTCoreText.h"
-
+#if FALSE
 @interface DTWebVideoView ()
 
 - (void)disableScrolling;
@@ -20,8 +20,9 @@
 	DTTextAttachment *_attachment;
 	
 	DT_WEAK_VARIABLE id <DTWebVideoViewDelegate> _delegate;
-	
+
 	UIWebView *_webView;
+
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -127,3 +128,4 @@
 @synthesize attachment = _attachment;
 
 @end
+#endif
