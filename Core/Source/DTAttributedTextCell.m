@@ -137,7 +137,7 @@
 	}
 	
 	// reduce width for accessories
-	
+#ifndef __TVOS_9_0
 	switch (self.accessoryType)
 	{
 		case UITableViewCellAccessoryDisclosureIndicator:
@@ -177,6 +177,7 @@
 			break;
 		}
 	}
+#endif
 	
 	CGSize neededSize = [self.attributedTextContextView suggestedFrameSizeToFitEntireStringConstraintedToWidth:contentWidth];
 	
